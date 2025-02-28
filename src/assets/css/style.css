@@ -59,7 +59,7 @@ body {
           transform: translateX(-50%);
 }
 
-/*header section*/
+/* header section */
 .hero_area {
   height: 100vh;
   display: -webkit-box;
@@ -69,10 +69,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
+  animation: changeBackground 12s infinite;
 }
+
+@keyframes changeBackground {
+  
+  0% { background-image: url(../images/talendimage.jpg); }
+  100% { background-image: url(../images/IA.png);}
+  
+   
+  }
+
+
 
 .sub_page .hero_area {
   height: auto;

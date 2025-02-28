@@ -1,0 +1,58 @@
+.home__search {
+  display: flex;
+  gap: 10px; /* Espace entre les éléments */
+  align-items: flex-end; /* Aligner les éléments en bas */
+}
+
+.home__group {
+  flex: 1; /* Chaque groupe prend une part égale de l'espace disponible */
+  min-width: 150px; /* Largeur minimale réduite pour les inputs */
+}
+
+.home__group label {
+  display: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.home__group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0; /* Empêcher le bouton de rétrécir */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #007bff; /* Changement de couleur au survol */
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Changement de couleur lors de la sélection */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Effet de focus */
+}

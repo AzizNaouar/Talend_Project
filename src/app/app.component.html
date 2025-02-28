@@ -1,0 +1,29 @@
+
+      <div class="container" style="margin-top: 50px; ">
+         
+                  <div class="home__content">
+                      <form class="home__search" #f=ngForm (submit)="SetValue(f)">
+                          <div class="home__group">
+                              <label for="search1" style="color: #fff;">Axe de Lettrage </label>
+                              <select name="cle" id="search1" ngModel required #a="ngModel">
+                                <option value="" disabled selected>Selectionner Axe de Lettrage</option>
+                                <option value="critere1">Critère 1</option>
+                                <option value="critere2">Critère 2</option>
+                                <option value="critere3">Critère 3</option>
+                              </select>
+                          </div>
+                      
+                          <div class="home__group">
+                              <label for="search2" style="color: #fff;">Date Début</label>
+                              <input type="date" name="datedeb" id="search2" placeholder="Date de début" ngModel required #t="ngModel">
+                          </div>
+                      
+                          <div class="home__group">
+                              <label for="search3" style="color: #fff;">Date Fin</label>
+                              <input type="date" name="datefin" id="search3" placeholder="Date de fin" ngModel required #p="ngModel">
+                          </div>
+                          <button type="submit"><span>Lancement</span></button>
+                      </form>
+                  </div>
+              </div>
+        
